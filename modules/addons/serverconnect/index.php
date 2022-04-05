@@ -18,6 +18,6 @@
  */
 
 # Prevent direct loading of the script
-if (!defined("WHMCS")) {
-    die("This file cannot be accessed directly");
+if (!defined('WHMCS')) {
+    die('This file cannot be accessed directly');
 }

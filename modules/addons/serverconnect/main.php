@@ -20,8 +20,8 @@ use WHMCS\Database\Capsule;
  */
 
 # Prevent direct loading of the script
-if (!defined("WHMCS")) {
-    die("This file cannot be accessed directly");
+if (!defined('WHMCS')) {
+    die('This file cannot be accessed directly');
 }
 
 ?>
@@ -91,7 +91,7 @@ if (!defined("WHMCS")) {
                                     if ($serverData) {
                                         $serverId       = $serverData->id;
                                         $serverName     = $serverData->name;
-                                        $serverLogo     = '/modules/servers/' . $serverData->type . '/logo.png';
+                                        $serverLogo     = "/modules/servers/{$serverData->type}/logo.png";
                                         $serverHostname = $serverData->hostname ? $serverData->hostname : $serverData->ipaddress;
 
                                         
@@ -131,7 +131,7 @@ if (!defined("WHMCS")) {
 
                             $serverId       = $serverData->id;
                             $serverName     = $serverData->name;
-                            $serverLogo     = '/modules/servers/' . $serverData->type . '/logo.png';
+                            $serverLogo     = "/modules/servers/{$serverData->type}/logo.png";
                             $serverHostname = $serverData->hostname ? $serverData->hostname : $serverData->ipaddress;
 
                             
@@ -164,11 +164,11 @@ if (!defined("WHMCS")) {
         <script src="/modules/addons/serverconnect/assets/js/app.js"></script>
         <script>
             function redirectToServer(serverId) {
-                window.open('configservers.php?action=singlesignon&token=<?php echo generate_token("link"); ?>&serverid=' + serverId, '_self');
+                window.open('configservers.php?action=singlesignon&token=<?php echo generate_token('link'); ?>&serverid=' + serverId, '_self');
             }
 
             function redirectToServerNewTab(serverId) {
-                window.open('configservers.php?action=singlesignon&token=<?php echo generate_token("link"); ?>&serverid=' + serverId, '_blank').focus();
+                window.open('configservers.php?action=singlesignon&token=<?php echo generate_token('link'); ?>&serverid=' + serverId, '_blank').focus();
             }
         </script>
         

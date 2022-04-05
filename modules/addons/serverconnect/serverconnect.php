@@ -18,8 +18,8 @@
  */
 
 # Prevent direct loading of the script
-if (!defined("WHMCS")) {
-    die("This file cannot be accessed directly");
+if (!defined('WHMCS')) {
+    die('This file cannot be accessed directly');
 }
 
 
@@ -31,10 +31,10 @@ if (!defined("WHMCS")) {
 function serverconnect_config() {
 
     return [
-        'name' => 'ServerConnect for WHMCS',
-        'description' => 'An alternative for WHMCS Connect that actually works in Google Chrome.',
-        'version' => '0.0.1',
-        'author' => 'Lee Mahoney'
+        'name'          => 'ServerConnect for WHMCS',
+        'description'   => 'An alternative for WHMCS Connect that actually works in Google Chrome.',
+        'version'       => '0.0.1',
+        'author'        => 'Lee Mahoney'
     ];
 
 }
@@ -46,7 +46,9 @@ function serverconnect_config() {
  */
 function serverconnect_activate() {
 
-    return ['status' => 'success'];
+    return [
+        'status' => 'success'
+    ];
 
 }
 

@@ -13,6 +13,10 @@ body {
     background: #fff;
 }
 
+.highlight {
+    background-color: #ffe08a;
+}
+
 .sc-header {
     width: 100%;
     background: #3e8ed0;
@@ -128,10 +132,6 @@ body {
 .sc-container .main .server-group .server-list .server-item p {
     width: 100%;
     text-align: center;
-}
-
-.highlight {
-    background-color: #ffe08a;
 }
 
 .footer {
