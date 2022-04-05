@@ -1,0 +1,200 @@
+/**
+ * ServerConnect for WHMCS
+ *
+ * @package    WHMCS
+ * @author     Lee Mahoney <lee@leemahoney.dev>
+ * @copyright  Copyright (c) Lee Mahoney 2022
+ * @license    MIT License
+ * @version    0.0.1
+ * @link       https://leemahoney.dev
+ */
+
+body {
+    background: #fff;
+}
+
+.sc-header {
+    width: 100%;
+    background: #3e8ed0;
+    padding: 120px 0;
+    height: 435px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.sc-header h1 {
+    font-size: 50px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.sc-header .search-container {
+    width: 50%;
+    position: relative;
+}
+
+.sc-header .search-container .search {
+    border: 1px solid #cccccc;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    font-size: 17px;
+    outline: none;
+}
+
+.sc-header .search-container .clear-button {
+    position: absolute;
+    top: 48px;
+    right: 14px;
+    background: #fff;
+    border: none;
+    outline: none;
+    display: none;
+    cursor: pointer;
+}
+
+.sc-header .search-container .clear-button i {
+    font-size: 27px;
+    color: #888;
+}
+
+.sc-container {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    height: calc(100vh - 435px);
+}
+
+.sc-container .main {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.sc-container .main .server-group {
+    width: 100%;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.sc-container .main .server-group h2 {
+    font-size: 26px;
+    text-align: left;
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+}
+
+.sc-container .main .server-group h2 i {
+    margin-right: 10px;
+}
+
+.sc-container .main .server-group .server-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.sc-container .main .server-group .server-list .server-item {
+    min-width: 22%;
+    background: #ffffff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+}
+
+.sc-container .main .server-group .server-list .server-item img {
+    width: 117px;
+}
+
+.sc-container .main .server-group .server-list .server-item h3 {
+    font-size: 22px;
+    padding: 20px;
+}
+
+.sc-container .main .server-group .server-list .server-item p {
+    width: 100%;
+    text-align: center;
+}
+
+.highlight {
+    background-color: #ffe08a;
+}
+
+.footer {
+    width: 100%;
+    margin: 40px 0;
+}
+
+.footer p {
+    width: 100%;
+    text-align: center;
+}
+
+.footer p i {
+    color: #ff91af;
+}
+
+@media only screen and (max-width: 650px) {
+    .sc-header {
+        height: 220px;
+        padding: 40px 0;
+    }
+
+    .sc-header h1 {
+        font-size: 25px;
+    }
+
+    .sc-header h1 i {
+        font-size: 22px;
+    }
+
+    .sc-header .search-container {
+        width: 90%;
+    }
+
+    .sc-header .search-container .search {
+        padding: 10px;
+    }
+
+    .sc-header .search-container .clear-button {
+        top: 38px;
+        right: 5px;
+    }
+
+    .sc-container {
+        width: 100%;
+    }
+
+    .sc-container .main .server-group h2 {
+        font-size: 20px !important;
+    }
+
+    .sc-container .main .server-group h2 i {
+        font-size: 17px;
+    }
+
+    .sc-container .main .server-list {
+        flex-direction: column;
+    }
+
+    .sc-container .main .server-list .server-item {
+        width: 100%;
+        margin: 0 !important;
+        margin-bottom: 20px !important;
+    }
+    
+}
